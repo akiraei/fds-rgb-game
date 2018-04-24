@@ -124,3 +124,13 @@ document.querySelector(".next").addEventListener("click", function () {
 document.querySelector(".try").addEventListener("click", function () {
   document.querySelector(".modal_wrong").classList.remove("show")
 })
+
+document.querySelector(".bnw").addEventListener("click", function () {
+  if (document.querySelector("content").style.backgroundColor === "black") {
+    document.querySelector("content").style.backgroundColor = "white"
+    document.querySelector("content").style.color = "black"
+  } else {
+    document.querySelector("content").style.backgroundColor = "black"
+    document.querySelector("content").style.color = "white"
+  }
+})

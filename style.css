@@ -5,7 +5,7 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .circler {
@@ -15,15 +15,52 @@ body {
   margin: 10px;
 }
 
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+heading {
+  width: 100vw;
+  color: #dddddd;
+  background-color: rgb(48, 14, 68);
 }
 
+.wht {
+  text-align: center;
+}
+
+content {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center; */
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  color: white;
+}
+
+content > div {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bnw {
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  background-color: #dddddd;
+  color: #111111;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #111111;
+  border-width: 10px;
+}
 
 .circle_con {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   width:  500px;
@@ -31,16 +68,14 @@ body {
 
 .modal_right {
   display: none;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 1vh;
+  width: 1vw;
 }
 
 .modal_wrong {
   display: none;
-  position: absolute;
-  height: 100vh;
-  width: 100vw
+  height: 1vh;
+  width: 1vw;
 }
 
 .show {
@@ -49,6 +84,8 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  height: 100vh;
+  width: 100vw;
   top: 0;
   left: 0;
 }
@@ -58,4 +95,9 @@ body {
   font-size: 5rem;
   }
 
-  
+  .try,.next {
+    border-radius : 50px;
+    border-color: black;
+    border-style: solid;
+    border-width: 15px;
+  }
