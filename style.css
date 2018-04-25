@@ -2,23 +2,35 @@
 /* @import url(normalize.css);
 @import url(fonts.css); */
 
+html {
+  font-size: 10px;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
+
 .circler {
-  width: 100px;
-  height: 100px;
+  width: 7vw;
+  height: 7vw;
   border-radius: 50%;
-  margin: 10px;
+  margin: 0.8rem;
 }
 
 heading {
   width: 100vw;
   color: #dddddd;
   background-color: rgb(48, 14, 68);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .wht {
@@ -28,9 +40,9 @@ heading {
 content {
   background-color: black;
   width: 100vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  /* justify-items: center; */
   align-items: center;
   padding: 50px;
   position: relative;
@@ -38,14 +50,14 @@ content {
 }
 
 content > div {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .bnw {
   height: 50px;
   width: 200px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: #dddddd;
   color: #111111;
   position: absolute;
@@ -60,25 +72,43 @@ content > div {
 }
 
 .circle_con {
-  margin-top: 50px;
+  margin-top: 20rem;
   display: flex;
   flex-wrap: wrap;
-  width:  500px;
+  width:  38vw;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .modal_right {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  /* display: none; */
   height: 1vh;
   width: 1vw;
 }
 
 .modal_wrong {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  /* display: none; */
   height: 1vh;
   width: 1vw;
+
 }
 
 .show {
+  font-size: 7rem;
+  text-shadow:  0.1rem 0.1rem #dddddd, 
+                -0.1rem -0.1rem #dddddd, 
+                -0.1rem 0.1rem #dddddd, 
+                0.1rem -0.1rem #dddddd;
+  transform: scaleX(100vw), scaleY(100vh);
+  visibility: unset;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,16 +118,24 @@ content > div {
   width: 100vw;
   top: 0;
   left: 0;
+  transition: 100ms;
 }
 
 .show div {
   padding: 50px;
-  font-size: 5rem;
   }
 
   .try,.next {
+    background-color: #dddddd;
     border-radius : 50px;
-    border-color: black;
+    border-color: #111111;
     border-style: solid;
     border-width: 15px;
+    text-align: center;
+  }
+
+  footer {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(48, 14, 68);
   }
