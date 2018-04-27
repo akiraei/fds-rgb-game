@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,20 +56,22 @@ content > div {
 }
 
 .bnw {
-  height: 50px;
-  width: 200px;
+  /* height: 50px;
+  width: 10vw; */
   font-size: 3rem;
   background-color: #dddddd;
   color: #111111;
   position: absolute;
-  top: 50px;
-  left: 100px;
+  display: block;
+  top: 1rem;
+  left: 8rem;
   text-align: center;
-  line-height: 25px;
+  /* line-height: 25px; */
   border-radius: 20px;
   border-style: solid;
-  border-color: #111111;
-  border-width: 10px;
+  border-color: #121212;
+  border-width: 2px;
+  padding: 0.5rem;
 }
 
 .circle_con {
@@ -82,7 +85,7 @@ content > div {
 
 .modal_right {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   visibility: hidden;
   /* display: none; */
@@ -92,7 +95,7 @@ content > div {
 
 .modal_wrong {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   visibility: hidden;
   /* display: none; */
@@ -107,17 +110,18 @@ content > div {
                 -0.1rem -0.1rem #dddddd, 
                 -0.1rem 0.1rem #dddddd, 
                 0.1rem -0.1rem #dddddd;
-  transform: scaleX(100vw), scaleY(100vh);
+  /* transform: scaleX(1.5), scaleY(4); */
   visibility: unset;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   top: 0;
   left: 0;
+  /* padding-bottom: 10rem; */
   transition: 100ms;
 }
 
@@ -132,6 +136,7 @@ content > div {
     border-style: solid;
     border-width: 15px;
     text-align: center;
+    margin-bottom: 20vh;
   }
 
   footer {
