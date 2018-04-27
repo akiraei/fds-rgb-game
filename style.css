@@ -3,7 +3,7 @@
 @import url(fonts.css); */
 
 html {
-  font-size: 10px;
+  font-size: 5px;
 }
 
 body {
@@ -13,8 +13,8 @@ body {
 }
 
 .circler {
-  width: 7vw;
-  height: 7vw;
+  width: 7vh;
+  height: 7vh;
   border-radius: 50%;
   margin: 0.8rem;
 }
@@ -57,14 +57,14 @@ content > div {
 .bnw {
   height: 50px;
   width: 200px;
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #dddddd;
   color: #111111;
   position: absolute;
   top: 50px;
   left: 100px;
   text-align: center;
-  line-height: 50px;
+  line-height: 25px;
   border-radius: 20px;
   border-style: solid;
   border-color: #111111;
@@ -72,10 +72,10 @@ content > div {
 }
 
 .circle_con {
-  margin-top: 20rem;
+  margin-top: 12rem;
   display: flex;
   flex-wrap: wrap;
-  width:  38vw;
+  width:  38vh;
   justify-content: space-around;
   align-content: space-around;
 }
